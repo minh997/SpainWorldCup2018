@@ -1,0 +1,19 @@
+body {text-align: center;
+	font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 2.0;
+    margin-right: auto;;
+    margin-left: auto;
+	width: 40%;
+	color: #C5C6C7;
+	background-image: url(Images/background.jpg);}
+nav {font-size: 1.25em;}
+ul {list-style-type: none;
+	text-align: left;}
+h1 {font-size: 2em;
+	text-align: center;
+	color: #66FCF1;}
+h2 {color: #66FCF1;}
+a {text-decoration: none;
+	color: #C5C6C7;}
