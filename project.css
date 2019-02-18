@@ -1,0 +1,541 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  height: 100%;}
+
+html {height: 100%;}
+.banner{
+  background-image:url(image/bannerbackground.jpg);
+  height: 25%;
+  background-size: cover;
+  position: relative;
+  font-family: worldcup;
+  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.textInBanner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.flag {
+	text-align: center;
+	font-size: 80px;
+}
+
+}
+a {text-decoration: none;
+}
+
+@font-face {
+	font-family: worldcup;
+	src: url(worldcupfont.ttf);
+}
+
+
+footer {text-align: center;
+	background-color: #000000;
+	color: #ffffff;
+	background-color: #333;
+	padding: 20px;
+	margin: 10px;
+  font-size: 130%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+
+footer a {text-decoration: none;
+  margin-left: 15px;}
+
+footer a:link {color: white;}
+footer a:visited {color: white;}
+
+footer a#facebook:hover {color: #3B5998;}
+footer a#twitter:hover {color: #0084b4;}
+footer a#homepage:hover {color: grey;}
+footer a#instagram:hover {color: #DD2A7B;}
+
+
+h1 {text-align: center;
+	border: none;
+	padding: 10px;
+	background-color: #333;
+	color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	font-family: worldcup;
+  margin-right: 10px;
+  margin-left: 10px;}
+
+h2 {text-align: center;}
+
+h3 {text-align: center;
+	font-size: 1.2em;}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+  font-size: 20px;
+  overflow: hidden;
+  background-color: #333;
+  margin: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  clear: left;
+}
+
+.navbar i {
+  box-shadow: none;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 20px;
+  background-color: #333;
+  font-family: inherit; 
+  margin: 0;
+  font-size: 20px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.parallax { 
+    background-image: url("image/fullteam.jpg");
+
+    height: 500px; 
+
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+/* IMAGE WITH TRANSPARENT TEXT */
+
+.container {
+    position: relative; 
+    max-width: 100%; 
+    margin: 0 auto; 
+}
+
+.container .content {
+    position: absolute; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 100%;
+    padding: 5px; 
+}
+
+img {vertical-align: middle;}
+
+/* SLIDESHOW */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+/* TABLE SPAIN IN PRIVIOUS WORLD CUP*/
+
+table{margin: auto;
+    border: 3px solid black;
+    }
+
+th {background-color: black;
+  color: white;
+  padding:1em 2em;
+  font-size: 2em;}
+
+td {padding: 1.2em;}
+
+td:hover {background-color: red;
+  font-size: 110%;
+  color: yellow;
+  font-weight: bold;}
+
+
+#champion:hover {background-image: url(image/champion.jpg);
+  color:white;
+  font-size: 120%;}
+
+/* OVERLAY EFFECT */
+
+/* Element inside this div will be centered  */
+.bigContainer{margin: auto;
+  display: block;
+  width:80%;
+  text-align: center;}
+
+
+.containerOverley {
+  position: relative;
+  margin: 5px;
+  width: 150px;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.containerOverleyTeam {
+  position: relative;
+  margin: 5px;
+  width: 600px;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: red;
+  background-color: rgba(256,0,0,0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.containerOverley:hover .overlay {
+  height: 100%;
+}
+
+.containerOverleyTeam:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  text-align: left;
+}
+
+
+
+/* FORM */
+
+#openFont {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#openFont:hover {
+    background-color: green;
+    background-size: cover;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+.cancelbtn:hover {
+  background-color: red;
+}
+
+.signupbtn{
+    padding: 14px 20px;
+    background-color: green;
+}
+.signupbtn:hover{
+  background-color: #006400;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 40%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: white;
+  padding: 14px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form {
+    padding: 16px;
+}
+
+form h1 {background-color: white;
+  color: black;
+  box-shadow: none;}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(211, 211, 211);
+    background-color: rgba(211, 211, 211, 0.5);
+    background-repeat: no-repeat;
+    padding-top: 0px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+input {margin: 0 10px;
+  }
+
+label {margin: 4px;
+  color: black;
+  text-align: left;}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* FLAG */
+figure{display: inline-block;}
+
+figcaption{}
+
+.scoreBoard{
+  display: inline;
+  position: relative; 
+  bottom: 40px;
+  font-size: 150%;
+  font-weight: bold;
+}
+i{font-size: 400%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+iframe{display: block;
+  width: 600px;
+  height: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+/* AUDIO */
+#audio {text-align: center;
+  font-size: small;}
+
+@media only screen and (max-width: 1024px) {
+.banner{
+  height: 15%;
+  font-size: 35px;
+}
+iframe{display: block;
+  width: 400px;
+  height: 280px;
+}
+.parallax{
+  height: 300px;
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.banner{
+  height: 15%;
+  font-size: 25px;
+
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;
+}
+
+.navbar{
+  font-size: 15px;
+}
+
+h1 {font-size: 150%;}
+h2 {font-size: 110%;}
+
+footer {font-size: 80%;
+}
+footer a {display: block;
+  margin-left: 40%;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 8px;}
+
+th {font-size: 1.8em;}
+
+td {padding: 0;}
+
+
+#openFont {
+  font-size: 80%;
+}
+.parallax {
+  height: 150px;
+}
+iframe{display: block;
+  width: 350px;
+  height: 200px;
+}
+i{font-size: 280%;}
+
+.containerOverley {
+  
+  width: 100px;
+}
+.containerOverleyTeam{
+  width:300px;
+}
+.text {
+  font-size: 10px;}
+
+figcaption{font-size: small;}
+
+audio {size: a3;}
+}
+

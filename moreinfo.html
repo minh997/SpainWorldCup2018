@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>More about World Cup 2018</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Our website has the most up to date information about Spain Team in World Cup 2018">
+<link rel="stylesheet" href="project.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+<style>
+  
+
+
+</style>
+</head>
+
+<a href="index.html">
+<div class="banner">
+  <div class="textInBanner">Spain World Cup 2018</div>
+
+</div>
+</a>
+
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">News
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="privious.html">Privious Match</a>
+      <a href="moreinfo.html">More about World Cup</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">About 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="players.html">Who play in World Cup 2018</a>
+      <a href="history.html">History and Record</a>
+    </div>
+  </div> 
+</div>
+
+<main>
+	<h1>More about World Cup</h1>
+
+	<h2>Champion: France</h2>
+
+  <div class="bigContainer">
+  <div class="containerOverleyTeam">
+  <img src="image/franceFlag.jpg" alt="France with WC champion" class="image">
+  <div class="overlay" style="background-image: url(image/france.jpg); background-size: cover">
+    
+  </div>
+  </div>
+  </div>
+
+
+
+	<h2>Runner-up: Croatia</h2>
+
+  <div id="audio">
+  <p>How to prounce Croatia</p>
+  <audio controls="controls">
+  <source src="audio/croatia.ogg" type="audio/ogg">
+  <source src="audio/croatia.mp3" type="audio/mpeg">
+  <a href="audio/croatia.mp3">Download the audio file</a>
+  </audio>
+  </div>
+
+
+
+  <div class="bigContainer">
+  <div class="containerOverleyTeam">
+  <img src="image/croatiaFlag.png" alt="Croatia team" class="image">
+  <div class="overlay" style="background-image: url(image/croatia.jpg); background-size: cover">
+  </div>
+  </div>
+  </div>
+
+  <h2>Personal Title</h2>
+
+  <div class="bigContainer">
+    
+    <figure>
+    <div class="containerOverley">
+    <img src="image/players/modric.png" alt="Luka Modric" class="image">
+    <div class="overlay" style="background-image: url(image/croatiaFlagSmall.png); background-size: cover">
+    </div>
+    </div>
+    <figcaption>Golden Ball<br>Luka Modric</figcaption>
+    </figure>
+
+    <figure>
+    <div class="containerOverley">
+    <img src="image/players/kane.png" alt="Harry Kane" class="image">
+    <div class="overlay" style="background-image: url(image/englandFlagSmall.jpg); background-size: cover">
+    </div>
+    </div>
+    <figcaption>Golden Boot<br>Harry Kane</figcaption>
+    </figure>
+
+    <figure>
+    <div class="containerOverley">
+    <img src="image/players/courtois.png" alt="Thibaut Courtois" class="image">
+    <div class="overlay" style="background-image: url(image/belgiumFlagSmall.jpg); background-size: cover">
+    </div>
+    </div>
+    <figcaption>Golden Glove<br>Thibaut Courtois</figcaption>
+    </figure>
+
+    <figure>
+    <div class="containerOverley">
+    <img src="image/players/mbappe.png" alt="Kylian Mbappe" class="image">
+    <div class="overlay" style="background-image: url(image/franceFlagSmall.jpg); background-size: cover">
+    </div>
+    </div>
+    <figcaption>FIFA Young Player Award<br>Kylian Mbappe</figcaption>
+    </figure>
+
+
+  </div>
+
+    
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+</main>
+
+
+
+
+<footer>
+ 	<strong>Social Media</strong><br><br>
+ 	<a href="https://www.facebook.com/SeFutbol/" id="facebook"><i class="fa fa-facebook-square"></i> Facebook</a>
+ 	<a href="https://twitter.com/SeFutbol" id="twitter"><i class="fa fa-twitter-square"></i> Twitter</a>
+ 	<a href="http://www.sefutbol.com/" id="homepage"><i class="fa fa-home"></i> Home Page</a>
+  <a href="https://www.instagram.com/sefutbol/?hl=en" id="instagram"><i class="fa fa-instagram"></i> Instagram</a>
+  <br>
+  <button id="openFont" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up for our e-mail list</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content"  method="post" action="http://webdevbasics.net/scripts/demo.php">
+      <h1>Sign Up</h1>
+      
+      <label for="name">Name</label><br>
+      <input type="text" name="Name" id="name" required><br>
+
+      <label for="email">Email</label><br>
+      <input type="text" name="Email" id="email" required><br><br>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button><br>
+      </div>
+  </form>
+</div>
+
+<br>
+<script>
+  document.write("<small>Last update on " + document.lastModified +  "</small>");
+</script>
+
+</footer>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+</script>
+
+</body>
